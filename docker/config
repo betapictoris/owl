@@ -1,0 +1,11 @@
+IrcEnabled="True"
+IrcServer="myIrcServer.net"
+IrcPort="6667"
+IrcChannel="#myIrcChannel"
+IrcBotnick="myOwl"
+
+DiscordEnabled="True"
+DiscordToken="xxx"
+DiscordWebhook="https://discord.com/api/webhooks/.../..."
+DiscordGuild="0000"
+DiscordChannel="0000"
