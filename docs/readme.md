@@ -2,8 +2,8 @@
 An open source Discord - IRC link written in Python. 
 
 ## To-do
- - [-] Discord
- - [-] IRC
+ - [x] Discord
+ - [x] IRC
  - [ ] Slack
  - [ ] Microsoft Teams
  - [ ] Matrix
