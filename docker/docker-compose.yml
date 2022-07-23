@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-        owl:
-                image: owl:build
-                container_name: owl
-                env_file: config               
+    owl:
+        image: betapictoris/owl
+        container_name: owl
+        env_file: config               
