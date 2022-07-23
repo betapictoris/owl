@@ -27,18 +27,18 @@ logging.info('Starting...')
 
 class Config:
     class Irc:
-        enabled = bool(os.environ['IrcEnabled'])        # Enable the IRC client
-        server  = str (os.environ['IrcServer'])         # IRC server for connection
-        port    = int (os.environ['IrcPort'])           # IRC port
-        channel = str (os.environ['IrcChannel'])        # IRC channel to read/send from/to
-        botnick = str (os.environ['IrcBotnick'])        # Nick name for the bot
+        enabled = bool(os.environ['IrcEnabled'].lower() in ['true', 'yes']) # Enable the IRC client
+        server  = str (os.environ['IrcServer'])                             # IRC server for connection
+        port    = int (os.environ['IrcPort'])                               # IRC port
+        channel = str (os.environ['IrcChannel'])                            # IRC channel to read/send from/to
+        botnick = str (os.environ['IrcBotnick'])                            # Nick name for the bot
 
     class Discord:
-        enabled = bool(os.environ['DiscordEnabled'])    # Enable the Discord client 
-        token   = str (os.environ['DiscordToken'])      # Discord bot token 
-        webhook = str (os.environ['DiscordWebhook'])    # Discord webhook (used for sending messages to the Discord server)
-        guild   = str (os.environ['DiscordGuild'])      # Discord guild to send/read messages to/from
-        channel = str (os.environ['DiscordChannel'])    # Discord channel to send/read message to/from
+        enabled = bool(os.environ['DiscordEnabled'].lower() in ['true', 'yes']) # Enable the Discord client 
+        token   = str (os.environ['DiscordToken'])                              # Discord bot token 
+        webhook = str (os.environ['DiscordWebhook'])                            # Discord webhook (used for sending messages to the Discord server)
+        guild   = str (os.environ['DiscordGuild'])                              # Discord guild to send/read messages to/from
+        channel = str (os.environ['DiscordChannel'])                            # Discord channel to send/read message to/from
 
 # Create clients
 def IrcClient():
