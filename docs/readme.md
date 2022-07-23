@@ -11,7 +11,9 @@ An open source Discord - IRC link written in Python.
  - [ ] Mentions
  - [ ] TLS IRC
  - [ ] IRC NickServ authentication
- - [ ] Docker support
+ - [x] Docker support
+ - [ ] Example Docker compose
+ - [ ] Publish Docker container on Docker Hub or GitHub 
 
 ## Configuration
 Set these environment variables: 
@@ -37,4 +39,8 @@ python3 Owl.py                                  # Run the script
 ```
 
 ### Using Docker
-*Coming soon!*
+```bash
+git clone git@github.com:BetaPictoris/owl.git   # Clone the repo
+cd owl                                          # Change your working directory into the
+docker build --tag owl:build                    # Build the Docker image. 
+docker run -e [YOUR CONFIG] -d owl:build        # Run the Docker container. 
