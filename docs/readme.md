@@ -11,6 +11,7 @@ An open source Discord - IRC link written in Python.
  - [ ] Mentions
  - [ ] TLS IRC
  - [ ] IRC NickServ authentication
+ - [ ] Docker support
 
 ## Configuration
 Set these environment variables: 
