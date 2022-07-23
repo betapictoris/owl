@@ -12,8 +12,8 @@ An open source Discord - IRC link written in Python.
  - [ ] TLS IRC
  - [ ] IRC NickServ authentication
  - [x] Docker support
- - [ ] Example Docker compose
- - [ ] Publish Docker container on Docker Hub or GitHub 
+ - [x] Example Docker compose
+ - [x] Publish Docker container on Docker Hub or GitHub 
 
 ## Configuration
 Set these environment variables: 
@@ -31,6 +31,22 @@ Set these environment variables:
 `DiscordChannel`     | Discord channel to send/read message to/from | Also a Discord Snowflake
 
 ## Installation
+### Using Docker
+#### Using Docker Hub
+```
+docker pull betapictoris/owl
+docker run -e [YOUR CONFIG] -d betapictoris/owl
+```
+Instead of running off the command line it is recommened to use a [compose file](https://github.com/BetaPictoris/owl/tree/dev/docker)
+
+#### Building the container
+```bash
+git clone git@github.com:BetaPictoris/owl.git   # Clone the repo
+cd owl                                          # Change your working directory into the
+docker build --tag owl:build                    # Build the Docker image. 
+docker run -e [YOUR CONFIG] -d owl:build        # Run the Docker container. 
+```  
+
 ### Manual
 ```bash
 git clone git@github.com:BetaPictoris/owl.git   # Clone the repo
@@ -38,9 +54,4 @@ cd owl/src                                      # Change your working directory 
 python3 Owl.py                                  # Run the script
 ```
 
-### Using Docker
-```bash
-git clone git@github.com:BetaPictoris/owl.git   # Clone the repo
-cd owl                                          # Change your working directory into the
-docker build --tag owl:build                    # Build the Docker image. 
-docker run -e [YOUR CONFIG] -d owl:build        # Run the Docker container. 
+
