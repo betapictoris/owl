@@ -1,8 +1,10 @@
+# Owl [![Docker Image CI](https://github.com/BetaPictoris/owl/actions/workflows/docker-image.yml/badge.svg)](https://github.com/BetaPictoris/owl/actions/workflows/docker-image.yml)
 
-# Owl
 An open source Discord - IRC link written in Python. 
 
-## To-do
+[![Owl](https://cdn.ozx.me/betapictoris/owl.svg)](https://github.com/betapictoris/owl)
+
+## :stars: To-do
  - [x] Discord
  - [x] IRC
  - [ ] Slack
@@ -15,7 +17,7 @@ An open source Discord - IRC link written in Python.
  - [x] Example Docker compose
  - [x] Publish Docker container on Docker Hub or GitHub 
 
-## Configuration
+## :wrench: Configuration
 Set these environment variables: 
  Variable            | Description                      | Values
 ---------------------|----------------------------------|-----------------------------------------
@@ -30,7 +32,7 @@ Set these environment variables:
 `DiscordGuild`       | Discord guild to send/read messages to/from  | A Discord Snowflake
 `DiscordChannel`     | Discord channel to send/read message to/from | Also a Discord Snowflake
 
-## Installation
+## :hammer: Installation
 ### Using Docker
 #### Using Docker Hub
 ```
@@ -54,4 +56,7 @@ cd owl/src                                      # Change your working directory 
 python3 Owl.py                                  # Run the script
 ```
 
+---
+
+[![wiki](https://cdn.ozx.me/betapictoris/header.svg)](https://github.com/BetaPictoris)
 
