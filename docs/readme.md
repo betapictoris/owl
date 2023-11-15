@@ -1,5 +1,10 @@
 # Owl [![Docker Image CI](https://github.com/BetaPictoris/owl/actions/workflows/docker-image.yml/badge.svg)](https://github.com/BetaPictoris/owl/actions/workflows/docker-image.yml)
 
+> [!WARNING]
+> This project has been abandoned! I may end up picking it up again in the future
+> but don't expect new features or updates. 
+
+
 An open source Discord - IRC link written in Python. 
 
 [![Owl](https://cdn.ozx.me/betapictoris/owl.svg)](https://github.com/betapictoris/owl)
